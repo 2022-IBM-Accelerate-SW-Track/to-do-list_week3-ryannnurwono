@@ -48,11 +48,12 @@ class AddTodo extends Component {
       // one div element.
       // 2. The return statement should include a text field input with the handleChange function from above that
       // is passed into an onChange event.
-      // 3. The return should also include a button with the handleSubmit function from above that is passed into
+      // 3. The return should also include a with the handleSubmit function from above that is passed into
       // an OnClick event.
       // 4. The value of the text field also should reflect the local state of this component.
-      <div>
+      <div data-testid="new-item-button">
         <TextField
+          data-testid="new-item-input"
           label="Add New Item"
           variant="outlined"
           onChange={this.handleChange}
